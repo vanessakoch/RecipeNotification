@@ -42,7 +42,7 @@ public class RecipeAdapter extends RecyclerView.Adapter {
         RecipeViewHolder viewHolder = (RecipeViewHolder) holder;
         String content = "";
         for(String s : recipeList.get(position).getIngredients()) {
-            content += s + " \n";
+            content += " - " + s + " \n";
         }
         viewHolder.ingredientsRecipe.setText(content);
         viewHolder.titleRecipe.setText(recipeList.get(position).getTitle());
